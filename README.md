@@ -1,0 +1,1 @@
+git clone https://github.com/joshualimquanxin/heartcode-training && cd [repository name]
