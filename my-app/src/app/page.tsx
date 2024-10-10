@@ -1,101 +1,51 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { FlipWords } from "@/components/ui/flip-words";
+// import { users } from "@/db/schema";
+// import { db } from "@/db/index";
+
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const words: string[] = ["Body", "Health", "Well-Being"]
+  
+  // async function insertOneUser() {
+  //   await db.insert(users).values({name: "joshua", isDrugDealer: true})
+  // }
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  // insertOneUser();
+
+  return (
+      <div className="bg-[url('/image.png')] bg-cover">
+        <div className="flex flex-col justify-center h-dvh gap-8">
+          <p className="font-bold text-5xl text-center">DURG = BAD</p>
+          <table className="text-center justify-center w- mx-auto border separate">
+            <thead>
+              <tr className="font-bold text-xl">
+                <th className="border-b">Your Computer</th>
+                <th className="border-b">Your 
+                  <FlipWords words={words}/>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border-b">Paying to install bootware/viruses</td>
+                <td className="border-b">Buying and consuming drugs</td>
+              </tr>
+              <tr>
+                <td className="border-b">Computer's processor being overworked</td>
+                <td className="border-b">Memory problems, learning difficulties,<br></br>and permanent damage</td>
+              </tr>
+              <tr>
+                <td className="border-b">Upgrading your GPU, RAM and storage</td>
+                <td className="border-b">Exercise regularly, sleep enough, play sports<br></br>and stepping out of your comfort zone</td>
+              </tr>
+            </tbody>
+          </table>
+          <div className="flex flex-col justify-center text-center items-center">
+            <p className="text-center w-1/2">Imagine paying money to damage your computer; it is something so outrageous that you probably have never thought of it before. However in the recent years, the number of youths that have been abusing drugs have steadily increased due to various circumstances. Abusing drugs does not makes you a bad person, you just need help beating your addiction.
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
   );
 }
