@@ -1,0 +1,193 @@
+{
+  "quizzes": [
+    {
+      "title": "Drug-Classification",
+      "icon": "../../assets/icons/icon-html.svg",
+      "questions": [
+        {
+          "question": "What is the main active ingredient in marijuana?",
+          "options": [
+            "THC",
+            "Caffeine",
+            "Nicotine",
+            "Cocaine"
+          ],
+          "answer": "THC"
+        },
+        {
+          "question": "Which category of drugs includes opioids like heroin and morphine?",
+          "options": [
+            "Stimulants",
+            "Depressants",
+            "Hallucinogens",
+            "Narcotics"
+          ],
+          "answer": "Narcotics"
+        },
+        {
+          "question": "What type of drug is commonly used as a stimulant?",
+          "options": ["Alcohol", "Cocaine", "Marijuana", "Heroin"],
+          "answer": "Cocaine"
+        },
+        {
+          "question": "Which class of drugs depresses the central nervous system?",
+          "options": [
+            "Stimulants",
+            "Depressants",
+            "Hallucinogens",
+            "Narcotics"
+          ],
+          "answer": "Depressants"
+        },
+        {
+          "question": "What is the term for drugs that mimic the effects of natural neurotransmitters?",
+          "options": ["Antagonists", "Agonists", "Synergists", "Inhibitors"],
+          "answer": "Agonists"
+        }
+      ]
+    },
+    {
+      "title": "Drug-Effects",
+      "icon": "../../assets/icons/icon-css.svg",
+      "questions": [
+        {
+          "question": "What is the term for the physical and psychological dependence on a substance?",
+          "options": [
+            "Addiction",
+            "Tolerance",
+            "Withdrawal",
+            "Overdose"
+          ],
+          "answer": "Addiction"
+        },
+        {
+          "question": "WWhat are the short-term effects of alcohol consumption?",
+          "options": ["Increased alertness", "Improved coordination", "Impaired judgment", "Enhanced memory"],
+          "answer": "Impaired judgment"
+        },
+        {
+          "question": "Which drug is associated with increased risk of HIV and hepatitis?",
+          "options": [
+            "Marijuana",
+            "Cocaine",
+            "Heroin",
+            "Alcohol"
+          ],
+          "answer": "Heroin"
+        },
+        {
+          "question": "What are the long-term effects of smoking cigarettes?",
+          "options": ["Improved lung function", "Increased risk of cancer", "Decreased risk of heart disease", "Enhanced cognitive abilities"],
+          "answer": "Increased risk of cancer"
+        },
+        {
+          "question": "What is the term for the process of withdrawing from a substance?",
+          "options": ["Tolerance", "Dependence", "Addiction", "Detoxification"],
+          "answer": "Detoxification"
+        }
+      ]
+    },
+    {
+      "title": "Drug-Prevention",
+      "icon": "../../assets/icons/icon-js.svg",
+      "questions": [
+        {
+          "question": "What is the most common method of drug administration?",
+          "options": [
+            "Inhalation",
+            "Injection",
+            "Oral ingestion",
+            "Topical application"
+          ],
+          "answer": "Oral ingestion"
+        },
+        {
+          "question": "What is the term for a program that aims to educate young people about the dangers of drugs?",
+          "options": [
+            "Drug court",
+            "Drug rehab",
+            "Drug prevention program",
+            "Drug enforcement agency"
+          ],
+          "answer": "Drug prevention program"
+        },
+        {
+          "question": "Which organization is responsible for setting drug policies in the Singapore?",
+          "options": ["FDA", "DEA", "CDC", "CNB"],
+          "answer": "CNB"
+        },
+        {
+          "question": "What is the term for a treatment program that involves gradually reducing the amount of a substance a person is using?",
+          "options": [
+            "Detoxification",
+            "Rehabilitation",
+            "Maintenance therapy",
+            "Harm reduction"
+          ],
+          "answer": "Maintenance therapy"
+        },
+        {
+          "question": "What is the term for a drug-free workplace policy?",
+          "options": [
+            "Drug testing",
+            "Drug education",
+            "Drug prevention",
+            "Drug-free workplace"
+          ],
+          "answer": "Drug-free workplace"
+        }
+      ]
+    },
+    {
+      "title": "Drug-Policy",
+      "icon": "../../assets/icons/icon-accessibility.svg",
+      "questions": [
+        {
+          "question": "What is the term for the illegal cultivation, manufacture, distribution, or possession of drugs?",
+          "options": [
+            "Drug trafficking",
+            "Drug abuse",
+            "Drug addiction",
+            "Drug overdose"
+          ],
+          "answer": "Drug trafficking"
+        },
+        {
+          "question": "Which international treaty aims to control the production and distribution of narcotic drugs?",
+          "options": [
+            "Geneva Convention",
+            "Single Convention on Narcotic Drugs",
+            "Paris Convention",
+            "Vienna Convention"
+          ],
+          "answer": "Single Convention on Narcotic Drugs"
+        },
+        {
+          "question": "What is the term for the decriminalization of possession of small amounts of certain drugs?",
+          "options": [
+            "Drug legalization",
+            "Drug liberalization",
+            "Drug reform",
+            "Drug reduction"
+          ],
+          "answer": "Drug liberalization"
+        },
+        {
+          "question": "Which country has one of the strictest drug policies in the world?",
+          "options": [
+            "Singapore",
+            "United States",
+            "Mexico",
+            "China"
+          ],
+          "answer": "Singapore"
+        },
+        {
+          "question": "What is the term for the use of drugs for medical purposes?",
+          "options": ["Drug abuse", "Drug addiction", "Drug trafficking", "Drug therapy"],
+          "answer": "Drug therapy"
+        }
+      ]
+    }
+  ]
+}

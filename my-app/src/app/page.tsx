@@ -1,3 +1,4 @@
+import { NavigationBar } from "@/components/navbar/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { FlipWords } from "@/components/ui/flip-words";
 // import { users } from "@/db/schema";
@@ -6,23 +7,17 @@ import { FlipWords } from "@/components/ui/flip-words";
 
 export default function Home() {
   const words: string[] = ["Body", "Health", "Well-Being"]
-  
-  // async function insertOneUser() {
-  //   await db.insert(users).values({name: "joshua", isDrugDealer: true})
-  // }
-
-  // insertOneUser();
 
   return (
-      <div className="bg-[url('/image.png')] bg-cover">
-        <div className="flex flex-col justify-center h-dvh gap-8">
+      <div className="bg-[url('/homebackground.png')] bg-cover">
+        <div className="flex flex-col justify-center h-dvh gap-8 text-stone-300">
           <p className="font-bold text-5xl text-center">DURG = BAD</p>
           <table className="text-center justify-center w- mx-auto border separate">
             <thead>
               <tr className="font-bold text-xl">
                 <th className="border-b">Your Computer</th>
                 <th className="border-b">Your 
-                  <FlipWords words={words}/>
+                  <FlipWords words={words} className="text-cyan-200"/>
                 </th>
               </tr>
             </thead>

@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Rubik } from 'next/font/google';
 import "./globals.css";
 import { NavigationBar } from "@/components/navbar/navigation-menu";
-import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs'
+import { ClerkProvider } from '@clerk/nextjs'
+import Providers from "@/providers";
+import Header from "@/components/Header";
+import { ThemeProvider } from "@/components/theme-provider";
 
+
+const rubik = Rubik({ subsets: ['latin'] });
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,18 +37,15 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} ${rubik.className} text-primary light:bg-primary-light dark:bg-primary-dark dark:text-white min-h-screen antialiased`}
         >
-            <ThemeProvider
-                attribute="class"
-                defaultTheme="system"
-                enableSystem
-                disableTransitionOnChange
-            >
-              <NavigationBar/>
-              {children}
-              <Toaster/>
-            </ThemeProvider>
+        <Providers>
+          <div className="bg-mobile-pattern md:bg-tablet-pattern lg:bg-desktop-pattern dark:bg-mobile-pattern-dark dark:md:bg-tablet-pattern-dark dark:lg:bg-desktop-pattern-dark bg-no-repeat min-h-screen">
+          <NavigationBar/>
+            {children}
+            <Toaster/>
+          </div>
+        </Providers>
         </body>
       </html>
     </ClerkProvider>
