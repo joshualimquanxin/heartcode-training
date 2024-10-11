@@ -65,7 +65,8 @@ export default function QuizPage() {
   };
 
   return quizFinished === false ? (
-    <div>
+    <div className="min-h-screen bg-gradient-to-br from-slate-200 via-slate-400 to-slate-600 dark:from-slate-600 dark:via-slate-800 dark:to-slate-950 p-8">
+        <div>
       {filteredQuiz.map((quiz, idx) => {
         return (
           <div
@@ -73,7 +74,7 @@ export default function QuizPage() {
             className="flex flex-col gap-10 pt-8 px-6 lg:grid lg:grid-cols-2 md:px-16 lg:px-32"
           >
             <div>
-              <p className="text-sm text-slate-400 dark:text-slate-300 italic mb-3 md:text-xl">
+              <p className="text-sm text-slate-600 dark:text-slate-300 italic mb-3 md:text-xl">
                 Question {questionIndex + 1} of {quiz.questions.length}
               </p>
               <h2 className="text-xl font-medium md:text-4xl">
@@ -123,6 +124,7 @@ export default function QuizPage() {
           </div>
         );
       })}
+    </div>
     </div>
   ) : (
     <Results
